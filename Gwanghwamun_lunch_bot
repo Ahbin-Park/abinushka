@@ -1,0 +1,17 @@
+import random
+
+def menu():
+    rice = ['참치김밥', '오므라이스', '연어덮밥', '설렁탕', '된장찌개']
+    bread = ['쉑쉑버거', '마마스 샌드위치', '머시룸 파니니', '마르게리타 피자']
+    etc = ['쌀국수','떡볶이', '훠궈', '파스타', '마라샹궈', '딤섬']
+
+    lunch_menu = input()
+
+    if lunch_menu == '밥':
+        print(random.choice(rice))
+    elif lunch_menu == '빵':
+        print(random.choice(bread))
+    else:
+        print(random.choice(etc))
+        
+menu()
